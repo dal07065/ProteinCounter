@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1F2418828629F5300194A31 /* ProteinCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D1F2418728629F5300194A31 /* ProteinCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1F2418D28629F5500194A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F2418C28629F5500194A31 /* Assets.xcassets */; };
+		D1F2419328629F5500194A31 /* ProteinCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1F2419228629F5500194A31 /* ProteinCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1F2419828629F5500194A31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2419728629F5500194A31 /* ContentView.swift */; };
+		D1F2419A28629F5500194A31 /* ProteinCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2419928629F5500194A31 /* ProteinCounterApp.swift */; };
+		D1F2419C28629F5500194A31 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2419B28629F5500194A31 /* ComplicationController.swift */; };
+		D1F2419E28629F5500194A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F2419D28629F5500194A31 /* Assets.xcassets */; };
+		D1F241A128629F5500194A31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F241A028629F5500194A31 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1F2418928629F5300194A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1F2417D28629F5300194A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1F2418628629F5300194A31;
+			remoteInfo = "ProteinCounter WatchKit App";
+		};
+		D1F2419428629F5500194A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1F2417D28629F5300194A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1F2419128629F5500194A31;
+			remoteInfo = "ProteinCounter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1F241A828629F5500194A31 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D1F2419328629F5500194A31 /* ProteinCounter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F241AC28629F5500194A31 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D1F2418828629F5300194A31 /* ProteinCounter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D1F2418328629F5300194A31 /* ProteinCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProteinCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F2418728629F5300194A31 /* ProteinCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProteinCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F2418C28629F5500194A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F2419228629F5500194A31 /* ProteinCounter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ProteinCounter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F2419728629F5500194A31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1F2419928629F5500194A31 /* ProteinCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinCounterApp.swift; sourceTree = "<group>"; };
+		D1F2419B28629F5500194A31 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D1F2419D28629F5500194A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F241A028629F5500194A31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D1F241A228629F5500194A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1F2418F28629F5500194A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1F2417C28629F5300194A31 = {
+			isa = PBXGroup;
+			children = (
+				D1F2418B28629F5300194A31 /* ProteinCounter WatchKit App */,
+				D1F2419628629F5500194A31 /* ProteinCounter WatchKit Extension */,
+				D1F2418428629F5300194A31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1F2418428629F5300194A31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1F2418328629F5300194A31 /* ProteinCounter.app */,
+				D1F2418728629F5300194A31 /* ProteinCounter WatchKit App.app */,
+				D1F2419228629F5500194A31 /* ProteinCounter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1F2418B28629F5300194A31 /* ProteinCounter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D1F2418C28629F5500194A31 /* Assets.xcassets */,
+			);
+			path = "ProteinCounter WatchKit App";
+			sourceTree = "<group>";
+		};
+		D1F2419628629F5500194A31 /* ProteinCounter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D1F2419728629F5500194A31 /* ContentView.swift */,
+				D1F2419928629F5500194A31 /* ProteinCounterApp.swift */,
+				D1F2419B28629F5500194A31 /* ComplicationController.swift */,
+				D1F2419D28629F5500194A31 /* Assets.xcassets */,
+				D1F241A228629F5500194A31 /* Info.plist */,
+				D1F2419F28629F5500194A31 /* Preview Content */,
+			);
+			path = "ProteinCounter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D1F2419F28629F5500194A31 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D1F241A028629F5500194A31 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1F2418228629F5300194A31 /* ProteinCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F241AD28629F5500194A31 /* Build configuration list for PBXNativeTarget "ProteinCounter" */;
+			buildPhases = (
+				D1F2418128629F5300194A31 /* Resources */,
+				D1F241AC28629F5500194A31 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1F2418A28629F5300194A31 /* PBXTargetDependency */,
+			);
+			name = ProteinCounter;
+			productName = ProteinCounter;
+			productReference = D1F2418328629F5300194A31 /* ProteinCounter.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D1F2418628629F5300194A31 /* ProteinCounter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F241A928629F5500194A31 /* Build configuration list for PBXNativeTarget "ProteinCounter WatchKit App" */;
+			buildPhases = (
+				D1F2418528629F5300194A31 /* Resources */,
+				D1F241A828629F5500194A31 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1F2419528629F5500194A31 /* PBXTargetDependency */,
+			);
+			name = "ProteinCounter WatchKit App";
+			productName = "ProteinCounter WatchKit App";
+			productReference = D1F2418728629F5300194A31 /* ProteinCounter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D1F2419128629F5500194A31 /* ProteinCounter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F241A528629F5500194A31 /* Build configuration list for PBXNativeTarget "ProteinCounter WatchKit Extension" */;
+			buildPhases = (
+				D1F2418E28629F5500194A31 /* Sources */,
+				D1F2418F28629F5500194A31 /* Frameworks */,
+				D1F2419028629F5500194A31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProteinCounter WatchKit Extension";
+			productName = "ProteinCounter WatchKit Extension";
+			productReference = D1F2419228629F5500194A31 /* ProteinCounter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1F2417D28629F5300194A31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D1F2418228629F5300194A31 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D1F2418628629F5300194A31 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D1F2419128629F5500194A31 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D1F2418028629F5300194A31 /* Build configuration list for PBXProject "ProteinCounter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1F2417C28629F5300194A31;
+			productRefGroup = D1F2418428629F5300194A31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1F2418228629F5300194A31 /* ProteinCounter */,
+				D1F2418628629F5300194A31 /* ProteinCounter WatchKit App */,
+				D1F2419128629F5500194A31 /* ProteinCounter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1F2418128629F5300194A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F2418528629F5300194A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F2418D28629F5500194A31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F2419028629F5500194A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F241A128629F5500194A31 /* Preview Assets.xcassets in Resources */,
+				D1F2419E28629F5500194A31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1F2418E28629F5500194A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F2419A28629F5500194A31 /* ProteinCounterApp.swift in Sources */,
+				D1F2419828629F5500194A31 /* ContentView.swift in Sources */,
+				D1F2419C28629F5500194A31 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1F2418A28629F5300194A31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1F2418628629F5300194A31 /* ProteinCounter WatchKit App */;
+			targetProxy = D1F2418928629F5300194A31 /* PBXContainerItemProxy */;
+		};
+		D1F2419528629F5500194A31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1F2419128629F5500194A31 /* ProteinCounter WatchKit Extension */;
+			targetProxy = D1F2419428629F5500194A31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D1F241A328629F5500194A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1F241A428629F5500194A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1F241A628629F5500194A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProteinCounter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N5SXU55U6N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProteinCounter WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ProteinCounter WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linakang.ProteinCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D1F241A728629F5500194A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProteinCounter WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N5SXU55U6N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProteinCounter WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ProteinCounter WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linakang.ProteinCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D1F241AA28629F5500194A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5SXU55U6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ProteinCounter_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "ProteinCounter WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linakang.ProteinCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D1F241AB28629F5500194A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5SXU55U6N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ProteinCounter_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "ProteinCounter WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linakang.ProteinCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D1F241AE28629F5500194A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5SXU55U6N;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linakang.ProteinCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D1F241AF28629F5500194A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5SXU55U6N;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linakang.ProteinCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1F2418028629F5300194A31 /* Build configuration list for PBXProject "ProteinCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F241A328629F5500194A31 /* Debug */,
+				D1F241A428629F5500194A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F241A528629F5500194A31 /* Build configuration list for PBXNativeTarget "ProteinCounter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F241A628629F5500194A31 /* Debug */,
+				D1F241A728629F5500194A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F241A928629F5500194A31 /* Build configuration list for PBXNativeTarget "ProteinCounter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F241AA28629F5500194A31 /* Debug */,
+				D1F241AB28629F5500194A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F241AD28629F5500194A31 /* Build configuration list for PBXNativeTarget "ProteinCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F241AE28629F5500194A31 /* Debug */,
+				D1F241AF28629F5500194A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1F2417D28629F5300194A31 /* Project object */;
+}
