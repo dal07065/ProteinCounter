@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D15C7B892865135000D4DEE6 /* Protein.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C7B882865135000D4DEE6 /* Protein.swift */; };
+		D1988F92286E9A4C004230CF /* AddProteinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1988F91286E9A4C004230CF /* AddProteinView.swift */; };
+		D1988F94286E9A5B004230CF /* ProteinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1988F93286E9A5B004230CF /* ProteinListView.swift */; };
+		D1988F96286E9A6B004230CF /* ProteinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1988F95286E9A6B004230CF /* ProteinDetailView.swift */; };
+		D1988F99286E9DBD004230CF /* DataSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1988F98286E9DBD004230CF /* DataSaving.swift */; };
 		D1F2418828629F5300194A31 /* ProteinCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D1F2418728629F5300194A31 /* ProteinCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D1F2418D28629F5500194A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F2418C28629F5500194A31 /* Assets.xcassets */; };
 		D1F2419328629F5500194A31 /* ProteinCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1F2419228629F5500194A31 /* ProteinCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -60,6 +65,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D15C7B882865135000D4DEE6 /* Protein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protein.swift; sourceTree = "<group>"; };
+		D1988F91286E9A4C004230CF /* AddProteinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProteinView.swift; sourceTree = "<group>"; };
+		D1988F93286E9A5B004230CF /* ProteinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListView.swift; sourceTree = "<group>"; };
+		D1988F95286E9A6B004230CF /* ProteinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinDetailView.swift; sourceTree = "<group>"; };
+		D1988F98286E9DBD004230CF /* DataSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSaving.swift; sourceTree = "<group>"; };
 		D1F2418328629F5300194A31 /* ProteinCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProteinCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F2418728629F5300194A31 /* ProteinCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProteinCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F2418C28629F5500194A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D15C7B872865131C00D4DEE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D15C7B882865135000D4DEE6 /* Protein.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1988F97286E9D85004230CF /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D1988F98286E9DBD004230CF /* DataSaving.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		D1F2417C28629F5300194A31 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +139,9 @@
 		D1F2419628629F5500194A31 /* ProteinCounter WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D1F2419728629F5500194A31 /* ContentView.swift */,
+				D1988F97286E9D85004230CF /* Scripts */,
+				D15C7B872865131C00D4DEE6 /* Model */,
+				D1F241B02862A2AC00194A31 /* View */,
 				D1F2419928629F5500194A31 /* ProteinCounterApp.swift */,
 				D1F2419B28629F5500194A31 /* ComplicationController.swift */,
 				D1F2419D28629F5500194A31 /* Assets.xcassets */,
@@ -129,6 +157,17 @@
 				D1F241A028629F5500194A31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1F241B02862A2AC00194A31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1F2419728629F5500194A31 /* ContentView.swift */,
+				D1988F91286E9A4C004230CF /* AddProteinView.swift */,
+				D1988F93286E9A5B004230CF /* ProteinListView.swift */,
+				D1988F95286E9A6B004230CF /* ProteinDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1F2419A28629F5500194A31 /* ProteinCounterApp.swift in Sources */,
+				D1988F96286E9A6B004230CF /* ProteinDetailView.swift in Sources */,
 				D1F2419828629F5500194A31 /* ContentView.swift in Sources */,
 				D1F2419C28629F5500194A31 /* ComplicationController.swift in Sources */,
+				D15C7B892865135000D4DEE6 /* Protein.swift in Sources */,
+				D1988F99286E9DBD004230CF /* DataSaving.swift in Sources */,
+				D1988F94286E9A5B004230CF /* ProteinListView.swift in Sources */,
+				D1988F92286E9A4C004230CF /* AddProteinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
