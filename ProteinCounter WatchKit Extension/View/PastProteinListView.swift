@@ -1,5 +1,5 @@
 //
-//  ProteinListView.swift
+//  PastProteinListView.swift
 //  ProteinCounter WatchKit Extension
 //
 //  Created by Jonathan Miller on 6/30/22.
@@ -7,29 +7,39 @@
 
 import SwiftUI
 
-struct ProteinListView: View {
+struct PastProteinListView: View {
     
     let contentView: ContentView
-    let proteins: [Protein]
+    let day: Day
+    let dateFormatter: DateFormatter = DateFormatter()
+    
+    init(contentView: ContentView, day: Day)
+    {
+        self.contentView = contentView
+        self.day = day
+        dateFormatter.dateFormat = "E, MMMM d"
+    }
 
     var body: some View {
-        if proteins.count > 0 {
+        if day.proteins.count > 0 {
             List
             {
-                ForEach(0..<proteins.count, id: \.self)
+                ForEach(0..<day.proteins.count, id: \.self)
                 {
-                    i in NavigationLink(destination: ProteinDetailView(protein: proteins[i])) {
+                    i in NavigationLink(destination: ProteinDetailView(protein: day.proteins[i])) {
                         HStack {
                             Capsule()
                                 .frame(width: 4)
                                 .foregroundColor(.accentColor)
-                            Text(proteins[i].name)
+                            Text(day.proteins[i].name)
                                 .lineLimit(1)
                                 .padding(.leading, 5)
                         }
                     }
-                }.onDelete(perform: contentView.delete)
-            }.navigationTitle("Today")
+                }
+                // - Work In Progress -
+                //.onDelete(perform: contentView.delete)
+            }.navigationTitle(dateFormatter.string(from: day.date))
         } else {
             Spacer()
             Image(systemName: "note.text")
@@ -43,11 +53,12 @@ struct ProteinListView: View {
     }
 }
 
-struct ProteinListView_Previews: PreviewProvider {
+struct PastProteinListView_Previews: PreviewProvider {
     static var contentView: ContentView = ContentView()
-    static var proteins: [Protein] = [Protein]()
+    static var day: Day = Day()
     
     static var previews: some View {
-        ProteinListView(contentView: contentView, proteins: proteins)
+        PastProteinListView(contentView: contentView, day: day)
     }
 }
+

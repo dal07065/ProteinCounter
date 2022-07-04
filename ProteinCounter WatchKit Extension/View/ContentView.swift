@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var proteins: [Protein] = [Protein]()
+    @State private var days: [Day] = [Day]()
+    
+//    @State private var currentDay: Date = Date.now
     
 //    @State private var speed = 25.0
 //    @State private var isEditing = false
@@ -22,10 +25,10 @@ struct ContentView: View {
     func save(){
         DispatchQueue.main.async {
             do {
+                days.last!.save(proteins: proteins)
+                let data = try JSONEncoder().encode(days)
                 
-                let data = try JSONEncoder().encode(proteins)
-                
-                let url = getDocumentDirectory().appendingPathComponent("proteins")
+                let url = getDocumentDirectory().appendingPathComponent("days")
                 
                 try data.write(to: url)
                 
@@ -37,10 +40,11 @@ struct ContentView: View {
 
     func load() {
         do {
-            let url = getDocumentDirectory().appendingPathComponent("proteins")
+            let url = getDocumentDirectory().appendingPathComponent("days")
             let data = try Data(contentsOf: url)
-            proteins = try JSONDecoder().decode([Protein].self, from: data)
+            days = try JSONDecoder().decode([Day].self, from: data)
             
+            proteins = days.last!.proteins
         }catch {
             
         }
@@ -64,12 +68,12 @@ struct ContentView: View {
     func getProteinCount() -> String
     {
         var proteinCount: Int = 0
+        
         for protein in proteins {
-            proteinCount = +protein.amount
+            proteinCount = proteinCount + protein.amount
         }
         return String(proteinCount)
     }
-
     
     var body: some View {
         
@@ -88,7 +92,7 @@ struct ContentView: View {
                         Image(systemName: "list.bullet").foregroundColor(.accentColor)
                         
                     }
-                    NavigationLink(destination: PastProteinListView(contentView: self, proteins: proteins)){
+                    NavigationLink(destination: ProteinCalendarView(contentView: self, days: days)){
                         Image(systemName: "calendar").foregroundColor(.accentColor)
                         
                     }
@@ -108,13 +112,25 @@ struct ContentView: View {
         //                        Text("\(speed, specifier: "%.0f")")
                                     
                     
-                }
-            .navigationTitle("Protein Counter")
+                }.navigationTitle("Protein Counter")
                 .onAppear(perform: {
                     load()
+                    if days.isEmpty {
+                        days.append(Day(date: Date.now, totalAmount: 0, proteins: proteins, id: UUID()))
+                        
+                    } else {
+                        let now = Date.now
+                        let lastDay = days.last!.date
+                        let same = Calendar.current.isDate(lastDay, inSameDayAs: now)
+                            if same == false {
+                                days.append(Day())
+                                proteins.removeAll()
+                                save()
+                            }
+                    }
             })
         }
-        }
+    }
     
 }
 

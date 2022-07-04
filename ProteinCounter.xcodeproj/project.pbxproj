@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D15C7B892865135000D4DEE6 /* Protein.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C7B882865135000D4DEE6 /* Protein.swift */; };
+		D18C13882870FA03007B5A1F /* PastProteinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C13872870FA03007B5A1F /* PastProteinListView.swift */; };
+		D18C138A2870FAA7007B5A1F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C13892870FAA7007B5A1F /* Day.swift */; };
+		D18C138C287124AA007B5A1F /* ProteinCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C138B287124AA007B5A1F /* ProteinCalendarView.swift */; };
 		D1988F92286E9A4C004230CF /* AddProteinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1988F91286E9A4C004230CF /* AddProteinView.swift */; };
 		D1988F94286E9A5B004230CF /* ProteinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1988F93286E9A5B004230CF /* ProteinListView.swift */; };
 		D1988F96286E9A6B004230CF /* ProteinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1988F95286E9A6B004230CF /* ProteinDetailView.swift */; };
@@ -66,6 +69,9 @@
 
 /* Begin PBXFileReference section */
 		D15C7B882865135000D4DEE6 /* Protein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protein.swift; sourceTree = "<group>"; };
+		D18C13872870FA03007B5A1F /* PastProteinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastProteinListView.swift; sourceTree = "<group>"; };
+		D18C13892870FAA7007B5A1F /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		D18C138B287124AA007B5A1F /* ProteinCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinCalendarView.swift; sourceTree = "<group>"; };
 		D1988F91286E9A4C004230CF /* AddProteinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProteinView.swift; sourceTree = "<group>"; };
 		D1988F93286E9A5B004230CF /* ProteinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListView.swift; sourceTree = "<group>"; };
 		D1988F95286E9A6B004230CF /* ProteinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinDetailView.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D15C7B882865135000D4DEE6 /* Protein.swift */,
+				D18C13892870FAA7007B5A1F /* Day.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +173,8 @@
 				D1988F91286E9A4C004230CF /* AddProteinView.swift */,
 				D1988F93286E9A5B004230CF /* ProteinListView.swift */,
 				D1988F95286E9A6B004230CF /* ProteinDetailView.swift */,
+				D18C13872870FA03007B5A1F /* PastProteinListView.swift */,
+				D18C138B287124AA007B5A1F /* ProteinCalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,8 +311,11 @@
 				D1F2419828629F5500194A31 /* ContentView.swift in Sources */,
 				D1F2419C28629F5500194A31 /* ComplicationController.swift in Sources */,
 				D15C7B892865135000D4DEE6 /* Protein.swift in Sources */,
+				D18C13882870FA03007B5A1F /* PastProteinListView.swift in Sources */,
 				D1988F99286E9DBD004230CF /* DataSaving.swift in Sources */,
 				D1988F94286E9A5B004230CF /* ProteinListView.swift in Sources */,
+				D18C138C287124AA007B5A1F /* ProteinCalendarView.swift in Sources */,
+				D18C138A2870FAA7007B5A1F /* Day.swift in Sources */,
 				D1988F92286E9A4C004230CF /* AddProteinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
